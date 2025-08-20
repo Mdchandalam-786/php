@@ -1,0 +1,54 @@
+<?php
+$a = 10;
+    $b = 2;
+    // arithmetic operators
+echo "Addition: " . ($a + $b) . "<br>";
+echo "Subtraction: " . ($a - $b) . "<br>";
+echo "Multiplication: " . ($a * $b) . "<br>";
+echo "Division: " . ($a / $b) . "<br>";
+echo "Modulus: " . ($a % $b) . "<br>";
+echo "Exponentiation: " . ($a ** $b) . "<br>";
+
+// assignment operators
+    $a = 10;
+    $b = 2;
+    $a += $b;
+    echo "Addition assignment: " . $a . "<br>";
+    $a -= $b;
+    echo "Subtraction assignment: " . $a . "<br>";
+    $a *= $b;
+    echo "Multiplication assignment: " . $a . "<br>";
+    $a /= $b;
+    echo "Division assignment: " . $a . "<br>";
+    $a %= $b;
+    echo "Modulus assignment: " . $a . "<br>";
+    // comparison operators
+     $a = 10;
+     $b = 2;
+     echo "Equal: " . ($a == $b) . "<br>";
+     echo "Identical: " . ($a === $b) . "<br>";
+     echo "Not equal: " . ($a != $b) . "<br>";
+     echo "Not identical: " . ($a !== $b) . "<br>";
+     echo "Greater than: " . ($a > $b) . "<br>";
+     echo "Less than: " . ($a < $b) . "<br>";
+     echo "Greater than or equal to: " . ($a >= $b) . "<br>";
+     echo "Less than or equal to: " . ($a <= $b) . "<br>";
+
+    // increment/decrement operators
+        $a = 10;
+        echo "Increment: " . ($a++) . "<br>";
+        echo "Decrement: " . ($a--) . "<br>";
+        // logical operators
+              $a = true;
+              $b = false;
+              echo "And: " . ($a && $b) . "<br>";
+              echo "Or: " . ($a || $b) . "<br>";
+              echo "Not: " . (!$a) . "<br>";
+
+             // string operators
+                          $a = "Hello";
+                          $b = "World";
+                          echo "Concatenation: " . ($a . $b) . "<br>";
+                          $a .= $b;
+                          echo "Concatenation assignment: " . $a . "<br>";
+     ?>
