@@ -1,0 +1,19 @@
+<?php 
+// non 2parameter function
+function parameter(){
+	$a=2;
+	$b=3;
+	$result=$a+$b;
+	echo "addition is:".$result."<br>";
+}
+parameter();
+
+// function a()
+function non_parameter($x,$y){
+	$result=$x+$y;
+	echo "addition is:".$result;
+}
+non_parameter(2,3);
+non_parameter(5,6);
+?>
+  ?>
