@@ -1,0 +1,33 @@
+<?php
+// Create a multidimensional array of students
+$students = [
+    ["name" => "Alice", "marks" => 85, "age" => 16],
+    ["name" => "Bob", "marks" => 78, "age" => 17],
+    ["name" => "Charlie", "marks" => 92, "age" => 16],
+    ["name" => "David", "marks" => 88, "age" => 18],
+    ["name" => "Eva", "marks" => 95, "age" => 17],
+    ["name" => "Frank", "marks" => 70, "age" => 16],
+    ["name" => "Grace", "marks" => 80, "age" => 17],
+    ["name" => "Hannah", "marks" => 90, "age" => 18],
+    ["name" => "Ian", "marks" => 75, "age" => 16],
+    ["name" => "Jane", "marks" => 85, "age" => 17]
+];
+
+// Display the student data using nested loops
+echo "<table border='1' cellpadding='5' cellspacing='0'>";
+echo "<tr><th>Student</th><th>Details</th></tr>";
+
+foreach ($students as $index => $student) {
+    echo "<tr>";
+    echo "<td>Student " . ($index + 1) . "</td>";
+    echo "<td>";
+    // Inner loop to iterate over each student's details
+    foreach ($student as $key => $value) {
+        echo ucfirst($key) . ": " . $value . "<br>";
+    }
+    echo "</td>";
+    echo "</tr>";
+}
+
+echo "</table>";
+?>
