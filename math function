@@ -1,0 +1,25 @@
+<?php
+// Built-in PHP functions
+// Example: Using array functions to manipulate student data
+$student_grades = [85, 92, 78, 95, 88];
+
+// Calculate the average grade
+$average_grade = array_sum($student_grades) / count($student_grades)."<br>";
+echo "Average Grade: " . $average_grade . "\n";
+
+// Find the highest and lowest grades
+$highest_grade = max($student_grades);
+$lowest_grade = min($student_grades);
+echo "Highest Grade: " . $highest_grade . "<br>";
+echo "Lowest Grade: " . $lowest_grade . "<br>"; 
+// Using mathematical functions
+$number = 16;
+echo "Square root of " . $number . " is " . sqrt($number) . "<br>"; // Square root
+echo "Absolute value of -5 is " . abs(-5) . "<br>"; // Absolute value
+echo "Rounded value of 4.6 is " . round(4.6) . "<br>"; // Round to nearest integer
+
+// Generating a random number
+echo "Random number between 10 and 20: " . rand(10, 20) . "<br>";
+echo "Minimum value: " . min(0, 150, 30, 20, -8, -200) . "<br>";
+echo "Maximum value: " . max(0, 150, 30, 20, -8, -200) . "<br>";
+?>
