@@ -1,0 +1,20 @@
+<?php
+echo strlen("Hello world!"); 
+// count the number of characters in a string
+$x = "Hello World!";
+echo strtoupper($x);
+// covert into upper case
+$x = "Hello World!";
+echo strtolower($x);
+// covert into lower case
+$x = "Hello World!";
+echo str_replace("World", "Dolly", $x);
+// replace the word
+$x = "Hello World!";
+echo strrev($x);
+// reverse the string
+$x = "Hello World!";
+echo substr($x, 6, 5);
+// slice the string and display
+
+?>
