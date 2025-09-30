@@ -1,0 +1,32 @@
+<?php 
+$servername="localhost";
+$username="root";
+$password="";
+
+// create conection
+$conn=new mysqli($servername,$username,$password);
+
+// check connection
+
+if($conn->connect_error)
+{
+
+	die("connection failed: ".$conn->connect_error);
+}
+
+// create database 
+
+$sql="CREATE DATABASE arth";
+if($conn->query($sql)== true)
+{
+	echo "database created successfully";
+}
+else{
+	echo "error in creating database:".$conn->error;
+}
+
+$conn->close();
+
+
+
+ ?>
