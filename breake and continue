@@ -1,0 +1,50 @@
+<?php
+// PHP script demonstrating break and continue statements
+
+echo "<h1>Break and Continue in PHP</h1>";
+
+// Example of break statement
+echo "<h2>Break Example:</h2>";
+echo "Looping from 1 to 10, but breaking when i == 5:<br>";
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 5) {
+        break; // Exit the loop when i is 5
+    }
+    echo "Number: $i<br>";
+}
+echo "Loop ended due to break.<br><br>";
+
+// Example of continue statement
+echo "<h2>Continue Example:</h2>";
+echo "Looping from 1 to 10, but skipping when i == 5:<br>";
+for ($i = 1; $i <= 10; $i++) {  
+    if ($i == 5) {
+        continue; // Skip the current iteration when i is 5
+    }
+    echo "Number: $i<br>";
+}
+echo "Loop completed, skipping 5.<br><br>";
+
+// Another example with while loop
+echo "<h2>Break in While Loop:</h2>";
+$counter = 1;
+while ($counter <= 10) {
+    echo "Counter: $counter<br>";
+    if ($counter == 7) {
+        break; // Break when counter reaches 7
+    }
+    $counter++;
+}
+echo "While loop ended due to break.<br><br>";
+
+// Continue in foreach loop
+echo "<h2>Continue in Foreach Loop:</h2>";
+$numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+foreach ($numbers as $num) {
+    if ($num % 2 == 0) {
+        continue; // Skip even numbers
+    }
+    echo "Odd number: $num<br>";
+}
+echo "Foreach loop completed, showing only odd numbers.<br>";
+?>
