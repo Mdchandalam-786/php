@@ -1,19 +1,43 @@
 <?php 
-// non 2parameter function
-function parameter(){
-	$a=2;
-	$b=3;
-	$result=$a+$b;
-	echo "addition is:".$result."<br>";
+// Call a Function
+function myMessage() {
+  echo "Hello world!";
 }
-parameter();
 
-// function a()
-function non_parameter($x,$y){
-	$result=$x+$y;
-	echo "addition is:".$result;
+myMessage();
+
+// Arguments  Function
+function familyName($fname) {
+  echo "$fname Refsnes.<br>";
 }
-non_parameter(2,3);
-non_parameter(5,6);
+familyName("rahul");
+familyName("abhishek");
+familyName("riya");
+familyName("jyoti");
+familyName("luv");
+// function with two arguments 
+function familyName($fname, $year) {
+  echo "$fname Refsnes. Born in $year <br>";
+}
+
+familyName("Hege","1975");
+familyName("Stale","1978");
+familyName("Kai Jim","1983");
+
+//  Default Argument Value
+function setHeight($minheight = 50) {
+  echo "The height is : $minheight <br>";
+}
+setHeight(350);
+setHeight();
+setHeight(135);
+setHeight(80);
+
+// declaration variable in function
+function addNumbers(int $a, int $b) {
+  return $a + $b;
+}
+echo addNumbers(5, "5 days"); 
+// since strict is NOT enabled "5 days" is changed to int(5), and it will return 10
+
 ?>
-  ?>
