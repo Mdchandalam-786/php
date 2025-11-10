@@ -1,0 +1,37 @@
+<?php 
+$servername="localhost";
+$username="root";
+$password="";
+$db="Login_db";
+
+// create conection
+$conn=new mysqli($servername,$username,$password,$db);
+
+// check connection
+
+if($conn->connect_error)
+{
+
+	die("connection failed: ".$conn->connect_error);
+}
+
+// create database 
+
+$sql="CREATE TABLE Login_db(
+ID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(30) NOT NULL,
+password VARCHAR(30) NOT NULL
+);";
+if($conn->query($sql)== true)
+{
+	echo "database created successfully";
+}
+else{
+	echo "error in creating database:".$conn->error;
+}
+
+$conn->close();
+
+
+
+ ?>
